@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="neonyazi.css">
+    <title>Neon Yazı</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('duvar.jpg');
+        }
+        .neon{
+            width: 35rem;
+            font-family: sacramento;
+            color: white;
+            font-size: 8rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0 0 15px turquoise, 0 35px 60px turquoise;
+            animation: neon 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon {
+            0%{
+                text-shadow: 0 0 10px turquoise;
+            }
+            50%{
+                text-shadow: 0 0 20px rgb(8, 133, 190);
+            }
+            100%{text-shadow: 0 0 20px rgb(201, 201, 226);}
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="neon">Some Magical Test</h1>
+</body>
+</html>
